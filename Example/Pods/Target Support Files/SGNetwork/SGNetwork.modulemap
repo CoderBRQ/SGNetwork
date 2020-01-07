@@ -1,0 +1,6 @@
+framework module SGNetwork {
+  umbrella header "SGNetwork-umbrella.h"
+
+  export *
+  module * { export * }
+}

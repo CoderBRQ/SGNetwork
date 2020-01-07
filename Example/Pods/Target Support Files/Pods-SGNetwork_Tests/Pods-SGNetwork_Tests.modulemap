@@ -1,0 +1,6 @@
+framework module Pods_SGNetwork_Tests {
+  umbrella header "Pods-SGNetwork_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
