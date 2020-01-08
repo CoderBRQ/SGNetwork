@@ -1,4 +1,5 @@
 # SGNetwork
+<<<<<<< HEAD
 
 [![CI Status](https://img.shields.io/travis/CoderBRQ/SGNetwork.svg?style=flat)](https://travis-ci.org/CoderBRQ/SGNetwork)
 [![Version](https://img.shields.io/cocoapods/v/SGNetwork.svg?style=flat)](https://cocoapods.org/pods/SGNetwork)
@@ -27,3 +28,6 @@ CoderBRQ, 81253781@qq.com
 ## License
 
 SGNetwork is available under the MIT license. See the LICENSE file for more info.
+=======
+网络组件
+>>>>>>> 0feb0c5515da26c6fd05cc3bc7012ff3836cb5f6
