@@ -1,7 +1,7 @@
 {
   "name": "SGNetwork",
-  "version": "0.1.0",
-  "summary": "A short description of SGNetwork.",
+  "version": "1",
+  "summary": "A short description of SGNetwork.That is all",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/CoderBRQ/SGNetwork",
   "license": {
@@ -13,10 +13,18 @@
   },
   "source": {
     "git": "https://github.com/CoderBRQ/SGNetwork.git",
-    "tag": "0.1.0"
+    "tag": "1"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "SGNetwork/Classes/**/*"
+  "source_files": "SGNetwork/Classes/**/*",
+  "dependencies": {
+    "AFNetworking": [
+      "~> 2.3"
+    ],
+    "SDWebImage": [
+      "~> 5.1.0"
+    ]
+  }
 }

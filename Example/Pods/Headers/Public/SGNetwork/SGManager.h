@@ -1,0 +1,1 @@
+../../../../../SGNetwork/Classes/SGManager.h
