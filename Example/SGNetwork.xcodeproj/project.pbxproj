@@ -20,6 +20,8 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		639F6E7E2400C15C008CD8C4 /* SGOneViewDowningView.m in Sources */ = {isa = PBXBuildFile; fileRef = 639F6E7D2400C15C008CD8C4 /* SGOneViewDowningView.m */; };
+		63F0B6D823E683C700643FEC /* SGOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F0B6D723E683C700643FEC /* SGOneViewController.m */; };
 		6E181C39E821E1E639BB3559 /* libPods-SGNetwork_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 730592925B9D6E014014A3E0 /* libPods-SGNetwork_Tests.a */; };
 		6FF3ABDC05E2669762D677F7 /* libPods-SGNetwork_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 939F5F8238B2F4B714C3E3A7 /* libPods-SGNetwork_Example.a */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
@@ -57,6 +59,10 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		639F6E7C2400C15B008CD8C4 /* SGOneViewDowningView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGOneViewDowningView.h; sourceTree = "<group>"; };
+		639F6E7D2400C15C008CD8C4 /* SGOneViewDowningView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGOneViewDowningView.m; sourceTree = "<group>"; };
+		63F0B6D623E683C700643FEC /* SGOneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGOneViewController.h; sourceTree = "<group>"; };
+		63F0B6D723E683C700643FEC /* SGOneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGOneViewController.m; sourceTree = "<group>"; };
 		6AF544FE97EAB24AD3790E22 /* Pods-SGNetwork_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGNetwork_Example.release.xcconfig"; path = "Target Support Files/Pods-SGNetwork_Example/Pods-SGNetwork_Example.release.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		730592925B9D6E014014A3E0 /* libPods-SGNetwork_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SGNetwork_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,6 +154,10 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* SGViewController.h */,
 				6003F5A6195388D20070C39A /* SGViewController.m */,
+				63F0B6D623E683C700643FEC /* SGOneViewController.h */,
+				63F0B6D723E683C700643FEC /* SGOneViewController.m */,
+				639F6E7C2400C15B008CD8C4 /* SGOneViewDowningView.h */,
+				639F6E7D2400C15C008CD8C4 /* SGOneViewDowningView.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -207,6 +217,7 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
+				3E785B632638EA02731E3AC4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -246,6 +257,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = CoderBRQ;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = ZH94MS6XZ3;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -294,6 +308,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3E785B632638EA02731E3AC4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SGNetwork_Example/Pods-SGNetwork_Example-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SGNetwork_Example/Pods-SGNetwork_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6E89C6A2C647F8171013FDCF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -348,6 +380,8 @@
 				6003F59E195388D20070C39A /* SGAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* SGViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				63F0B6D823E683C700643FEC /* SGOneViewController.m in Sources */,
+				639F6E7E2400C15C008CD8C4 /* SGOneViewDowningView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,7 +464,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -463,7 +497,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -475,10 +509,11 @@
 			baseConfigurationReference = E9C7A383F9B79EB243190E87 /* Pods-SGNetwork_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZH94MS6XZ3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SGNetwork/SGNetwork-Prefix.pch";
 				INFOPLIST_FILE = "SGNetwork/SGNetwork-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -492,10 +527,11 @@
 			baseConfigurationReference = 6AF544FE97EAB24AD3790E22 /* Pods-SGNetwork_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZH94MS6XZ3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SGNetwork/SGNetwork-Prefix.pch";
 				INFOPLIST_FILE = "SGNetwork/SGNetwork-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

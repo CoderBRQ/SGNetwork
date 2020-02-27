@@ -21,7 +21,7 @@
   "source_files": "SGNetwork/Classes/**/*",
   "dependencies": {
     "AFNetworking": [
-      "~> 2.3"
+      "~> 3.2.1"
     ],
     "SDWebImage": [
       "~> 5.1.0"
